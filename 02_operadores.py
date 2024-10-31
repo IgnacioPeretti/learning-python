@@ -78,4 +78,12 @@ print( " Hola " >= " Dos ")
 print( " Hola " != " Hola1 ")
 
 
+"""""
+Operadores lógicos: Operan sobre valores booleanos.
+
+and (y)
+or (o)
+not (no)
+
+"""""
 
