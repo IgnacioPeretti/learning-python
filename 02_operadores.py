@@ -1,4 +1,4 @@
-# Operadores #
+# Operadores 
 
 
 """""
@@ -106,6 +106,33 @@ print(not(3 > 2))
 print(not(3 > 4))
 
 
-""""""
+"""""
+Operadores de asignación: Asignan valores a variables.
 
-""""""
+= (asignación simple)
++=, -=, *=, /=, etc. (asignación con operación)
+
+
+Operadores de identidad: Comprueban si dos variables hacen referencia al mismo objeto en memoria.
+
+is (es)
+is not (no es)
+
+Operadores de pertenencia: Verifican si un valor pertenece a una secuencia (como una lista o un string).
+
+in (en)
+not in (no en)
+
+
+Operadores bit a bit: Operan a nivel de bits.
+
+& (AND)
+| (OR)
+^ (XOR)
+~ (NOT)
+<< (desplazamiento a la izquierda)
+>> (desplazamiento a la derecha)
+
+Estos operadores permiten manipular datos y realizar diversas tareas en tus programas de Python.
+
+"""""
