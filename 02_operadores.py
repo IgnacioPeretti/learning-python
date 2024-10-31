@@ -56,4 +56,26 @@ Operadores de comparación: Comparan dos valores y devuelven un booleano (True o
 
 """""
 
-print()
+print(3 > 4)
+print(3 < 4)
+print(3 >= 4)
+print(3 <= 4)
+print(3 == 4)
+print(3 != 4)
+print(3 > 4 == 2)
+print(3 > 4 > 2)
+print(5 > 4 > 3)
+
+
+# Ordenación alfabética por ASCII
+
+print( " Hola " > " Nacho ")
+
+print( " Hola " == " Hola ")
+
+print( " Hola " >= " Dos ")
+
+print( " Hola " != " Hola1 ")
+
+
+
