@@ -43,3 +43,51 @@ name, surname, age, temperatura = "Ignacio", "Peretti", 24, 27.5
 print("Mi nombre es {} {} y mi edad es {}, la temperatura de hoy es de {} grados".format(name, surname, age, temperatura))
 
 print("Mi nombre es %s %s y mi edad es %d, la temperatura de hoy es de %f grados" %(name, surname, age, temperatura))
+
+print(f"Mi nombres es {name} {surname} y mi edad es {age}, la temperatura de hoy es de {temperatura} grados.") 
+
+# Desempaquetado de caracteres
+
+language = "Python"
+
+a, b, c, d, e, f = language 
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+
+
+# División
+
+language_slice = language[1:3]
+print(language_slice)
+
+
+language_slice = language[1:]
+print(language_slice)
+
+language_slice = language[-2]
+print(language_slice)
+
+
+# Reverse
+
+reversed_language = language[::-1]
+print(reversed_language)
+
+
+# Funciones
+
+print(language.capitalize())
+print(language.upper())
+print(language.count("t"))
+print(language.isnumeric())
+print("1".isnumeric())
+print(language.lower())
+print(language.upper().isupper())
+print(language.startswith("Py"))
+
