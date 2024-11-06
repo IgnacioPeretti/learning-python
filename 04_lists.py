@@ -51,9 +51,14 @@ my_other_list.append("Córdoba") # Agrega un elemento a la lista
 print(my_other_list)
 
 
-my_other_list.insert("Argentina")
+my_other_list.insert(1, "Argentina")
 print(my_other_list)
 
+my_other_list.insert(2, "Rojo")
+print(my_other_list)
+
+my_other_list[2] = "Azul"
+print(my_other_list)
 
 my_other_list.remove("Argentina")
 print(my_other_list)
@@ -72,3 +77,25 @@ print(my_list)
 my_pop_element = my_list.pop(2)
 print(my_pop_element)   # Nos retorna el elemento que sera eliminado
 print(my_list)
+
+del my_list[0] 
+print(my_list)
+
+my_list.append(24 + 25)
+print(my_list)
+
+my_new_list = my_list.copy()
+
+my_list.clear()
+print(my_list)
+print(my_new_list)
+
+my_new_list.reverse
+print(my_new_list)
+
+my_new_list.append(24)
+my_new_list.append(22)
+print(my_new_list)
+
+my_new_list.sort()   # ordena nuestros datos
+print(my_new_list)
