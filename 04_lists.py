@@ -1,5 +1,6 @@
-# Listas 
-# Estructura de datos
+### Estructura de datos ###
+### Listas ###
+
 
 
 my_list = list()

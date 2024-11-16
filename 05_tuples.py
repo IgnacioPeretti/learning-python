@@ -1,6 +1,17 @@
+### Estructura de datos ###
 ### Tuples ###
 
+"""""
+Diferencias entre listas y tuplas:
+Lista: Es mutable, lo que significa que puedes modificar sus elementos después de haberla creado.
+Puedes agregar, eliminar o cambiar elementos.
 
+Tupla: Es inmutable, lo que significa que no puedes modificar sus elementos después de haberla creado.
+Una vez que se define una tupla, no puedes cambiar sus valores, agregar elementos ni eliminar elementos.
+
+Las listas se suelen usar cuando los elementos pueden cambiar a lo largo del tiempo.
+Las tuplas se suelen utilizar cuando los datos no deben cambiar o no seran alterados.
+"""""
 
 my_tuple = tuple()
 my_other_tuple = ()
