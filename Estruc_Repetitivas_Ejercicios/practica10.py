@@ -18,6 +18,7 @@ while True:
         break
     elif n < 0:
         print("Error: No puede ingresar un monto negativo. Ingrese nuevamente.")
+        continue
 
     print(f"El valor de su compra es de: {n}")
     total_ventas += n

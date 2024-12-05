@@ -11,3 +11,10 @@ for i in range(1, n + 1):
 
 
 print("El resultado de la sumatoria es:", sumatoria)
+
+
+
+palabra = input("Ingrese una palabra: ")
+
+for i in range(1, 10):
+    print(palabra)
