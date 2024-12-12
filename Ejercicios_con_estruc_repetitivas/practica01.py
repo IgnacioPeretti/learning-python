@@ -14,10 +14,9 @@ total_edades = 0
 num_integrantes = 5
 
 for i in range (5):
-    edades = int(input(f"Ingrese la edad del integrante {i+1}: "))
-    total_edades += edades
+    edad = int(input(f"Ingrese la edad del integrante {i+1}: "))
+    total_edades += edad
 
-print(total_edades)
 
 promedio_edades = total_edades / num_integrantes
 

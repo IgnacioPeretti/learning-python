@@ -21,7 +21,7 @@ signos = {
     9:"Sagitario",
     10:"Capricornio",
     11:"Acuario",
-    12:"Pscis"
+    12:"Piscis"
 }
 
 print(f"A continuación podrás ver los signos: \n{signos}")

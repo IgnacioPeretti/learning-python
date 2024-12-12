@@ -19,8 +19,8 @@ while True:
     num_retorno = ""
 
     for digito in num:
-        if int(digito) <= 5:  # Verificar si el dígito es menor o igual a 5
-            num_retorno += digito  # Agregar al resultado
+        if int(digito) <= 5:  
+            num_retorno += digito  
 
     print("El número resultante es:", num_retorno)
 

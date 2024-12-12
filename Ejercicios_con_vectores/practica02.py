@@ -21,3 +21,4 @@ if cantidad > 0:
 else:
     print(f"El número {n} no se encuentra en el vector.")
 
+

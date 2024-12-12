@@ -10,7 +10,7 @@ minúsculas.
 variable1 = "contraseña"
 
 
-pedir_contraseña = input("Ingrese la contraseña:")
+pedir_contraseña = input("Ingrese la contraseña:").lower
 
 if pedir_contraseña == variable1:
     print("La contraseña es correcta.")

@@ -7,7 +7,7 @@ Es una estructura de datos que permite almacenar varios elementos sin duplicados
 
 """""
 my_set = set()
-my_other_set = {}   # Tenemos dos tipos de estructuras que se definen de este modo, sets y diccionarios
+my_other_set = {}    # Tenemos dos tipos de estructuras que se definen de este modo, sets y diccionarios
 
 
 print(type(my_set))

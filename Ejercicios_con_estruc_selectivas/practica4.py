@@ -33,14 +33,20 @@ año = int(input("Ingrese el año de la fecha: "))
 print(f"Su fecha es: {dia}/{mes}/{año}")
 
 
+# Verificación de mes válido
+
 if mes < 1 and mes > 12:
     print("Fecha Incorrecta: El mes no es válido")
 else:
+    # Determinar si el año es bisiesto
+
     if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
         bisiesto = True
     else:
         bisiesto = False
 
+
+# Días válidos para cada mes
 
 if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12:
     max_dia = 31
@@ -52,6 +58,8 @@ elif mes == 2:
     else:
         max_dia = 28
 
+
+# Verificar si el día es válido
 
 if dia < 1 or dia > max_dia:
         print("Fecha Incorrecta: El día no es válido para este mes.")

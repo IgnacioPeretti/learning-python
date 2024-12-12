@@ -5,12 +5,8 @@ el mes se introduzcan con un solo carácter.
 
 """""
 
-fecha_de_nacimiento = input("Ingrese su fecha de nacimiento en formato dd/mm/aa :  ")
+fecha_de_nacimiento = input("Ingrese su fecha de nacimiento en formato dd/mm/aaaa: ")
 
-dia = fecha_de_nacimiento.split("/")[0]
+dia, mes, año = fecha_de_nacimiento.split("/")
 
-mes = fecha_de_nacimiento.split("/")[1]
-
-año = fecha_de_nacimiento.split("/")[2]
-
-print(f"Su fecha de nacimiento es el día {dia} del mes {mes} del año {año}.")
+print(f"Su fecha de nacimiento es el día {int(dia)} del mes {int(mes)} del año {int(año)}.")

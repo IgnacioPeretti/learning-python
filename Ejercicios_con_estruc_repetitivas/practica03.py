@@ -13,8 +13,5 @@ for i in range(numero):
     suma += num
     
 
-    
-    
-
 print("La suma de todos los números es: ", suma )
     

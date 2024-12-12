@@ -12,6 +12,8 @@ abajo, de altura el numero introducido.
 
 
 altura = int(input("Ingrese la altura de el triangulo: "))
+
 area = 1
+
 for i in range(1, altura + 1):
     print("*" * i)

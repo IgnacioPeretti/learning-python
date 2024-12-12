@@ -16,3 +16,6 @@ print(f"Tu nuevo correo electrónico es: {nuevo_correo}")
 
 
 
+# Se usa el método .split('@'), que divide la cadena en dos partes:
+# [0]: La parte antes de la arroba (el nombre).
+# [1]: La parte después de la arroba (el dominio actual).

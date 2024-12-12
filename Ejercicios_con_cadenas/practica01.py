@@ -1,5 +1,4 @@
 """""
-Ejercicio 1
 Escribir un programa que pregunte el nombre del
 usuario en la consola y después de que el
 usuario lo introduzca muestre por pantalla

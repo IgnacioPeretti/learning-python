@@ -45,7 +45,7 @@ class Person:
         else:
             self._age = age
 
-    def walk(self):                                    # Funcion dentro de una clase
+    def walk(self):                                    
         print(f"{self.full_name} Esta caminando")
     
     def correr(self):
@@ -77,6 +77,7 @@ print(my_person2.get_name())
 
 """""
 Resumen:
+
 Los getters son métodos para obtener los valores de los atributos privados.
 Los setters son métodos para modificar los valores de los atributos privados.
 
