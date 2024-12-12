@@ -6,26 +6,32 @@ tercer vector con la multiplicaciones
 correspondientes
 
 """""
-def cargar_vector(vec, nombre):
-    for i in range(long):
-        vec[i] = int(input(f"Ingrese el valor de {i + 1} para {nombre}: "))
 
 
-long = int(input("Ingrese la longitud del vector: "))
-
-vec1 = [None] * long
-vec2 = [None] * long
-vec3 = [None] * long
-
-cargar_vector(vec1, "Vector1")
-cargar_vector(vec2, "Vector2")
+def cargar_vector(vector, nombre):
+    for i in range(longitud):
+            vector[i] = int(input(f"Ingrese los elementos del {nombre}: "))
 
 
-for i in range(long):
-    vec3[i] = vec1[i] * vec2[i]
 
 
-print(f"El resultado final es: {vec3}")
+longitud = int(input("Ingrese la longitud del vector: "))
+
+
+vector1 = [None] * longitud
+vector2 = [None] * longitud
+vector3 = [None] * longitud
+
+cargar_vector(vector1, "Vector1")
+cargar_vector(vector2, "Vector2")
+
+for i in range(longitud):
+      vector3[i] = vector1[i] * vector2[i]
+
+
+print(f"El resultado final es: {vector3}")
+
+
 
 
 
