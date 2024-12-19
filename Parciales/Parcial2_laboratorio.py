@@ -7,10 +7,10 @@ posicion_actual_arabia = 0
 total_unidades = 19
 total_unidades_grupoc = 76
 
-argentina = [None] * total_unidades
-mexico = [None] * total_unidades
-arabia_saudita = [None] * total_unidades
-polonia = [None] * total_unidades
+argentina = [0] * total_unidades
+mexico = [0] * total_unidades
+arabia_saudita = [0] * total_unidades
+polonia = [0] * total_unidades
 
 
 print("Bienvenido al programa del Mundial de la copa 2022.")

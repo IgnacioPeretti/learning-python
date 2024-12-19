@@ -7,8 +7,9 @@ cuántos alumnos son más altos que la media y cuántos más bajos
 vector = []
 altura_total = 0
 
+alumnos = int(input("Ingrese la cantidad de alumnos: "))
 
-for i in range(0, 5):
+for i in range(alumnos):
     altura = int(input(f"Ingrese la altura del alumno {i+1}: "))
     vector.append(altura)
 
@@ -38,4 +39,3 @@ print(f"Alumnos mas altos que la media {mas_altos}")
 print(f"Alumnos mas bajos que la media {mas_bajos}")
 
 
-    

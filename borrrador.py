@@ -1,74 +1,63 @@
-total_unidades = 19 
+"""""
+La empresa Apper necesita una aplicación que le permita
+llevar el registro de los empleados que trabajan en su planta.
+Realizar un algoritmo que pida el número de empleados de la
+empresa, Número de legajo, Apellido y nombre, Edad, Sueldo
+y Puesto que ocupa. La codificación de los puestos seria :
+SUPERVISOR ’S’- GERENTE ‘G’ - PLANTA ‘P’
+El programa al final debe de mostrar los siguientes resultados:
+a. Cantidad de empleados por puesto.
+b. Empleados Mayores de 40 Años.
+c. Apellido y nro de legajo de los empleados que ganan
+más de $200.000
 
-equipo = ["Argentina", "Mexico", "Arabia Saudita", "Polonia"]
+"""""
+cantidad_de_supervisores = 0
+cantidad_de_gerentes = 0
+cantidad_de_planta = 0
 
-figuritas = [[None] * total_unidades for _ in equipo]
+empleados_mayores_40 = []
 
-posicion_actual_equipo = [0] * len(equipo)
-
-
-def añadir_figuritas(indice):
-
-    while True:
-                
-        if posicion_actual_equipo[indice] == total_unidades:
-            print(f"Felicidades completaste el equipo {equipo[indice]}  !")
-            break
-
-        figurita = input(f"Ingrese las unidades o (exit) para salir: ")
-
-        if figurita.lower() == "exit":
-            print("Volviendo al menu principal.")
-            break
-
-        if figurita in figuritas:
-            print(f"La figurita {figuritas} ya la tenes.")
-
-        else:
-            figuritas[indice] [posicion_actual_equipo[indice]] == figurita
-            posicion_actual_equipo[indice] += 1
-            print(f"Figurita añadida: {figuritas}")
+emplados_sueldo_mas_200 = []
 
 
-        porcentaje = (posicion_actual_equipo[indice] / total_unidades) * 100
-        print(f"Usted tiene completado un {porcentaje:.2f} % de las figuras de equipo {equipo[indice]}.")
+num_emplados = int(input("Ingrese el número de empleados de su empresa: "))
+
+for i in range(num_emplados):
+    print(f"Ingrese los datos del empleado {i + 1}: ")
+    legajo = int(input("Número de legajo: "))
+    nombre_apellido = input("Apellido y Nombre: ")
+    edad = int(input("Ingrese su edad: "))
+    sueldo = float(input("Ingrese su sueldo: "))
+    puesto = input("Ingrese su puesto (S - G - P): ")
+
+    if puesto == "S":
+      cantidad_de_supervisores += 1
+    elif puesto == "G":
+       cantidad_de_gerentes += 1
+    elif puesto == "P":
+       cantidad_de_planta += 1
+   
 
 
-print("Bienvenido al programa del Mundial de la copa 2022.")
+    if edad > 40:
+       empleados_mayores_40.append(f"{nombre_apellido} Legajo: {legajo}")
+   
+    if sueldo > 200000:
+      emplados_sueldo_mas_200.append(f"{nombre_apellido} Legajo: {legajo}")
 
-while True:
+print(f"Cantidad de supervisores: {cantidad_de_supervisores}")
+
+print(f"Cantidad de gerentes: {cantidad_de_gerentes}")
+
+print(f"Cantidad de trabajadores en planta: {cantidad_de_planta}")
+
+print("Listado de los empleados mayores a 40.")
+print(empleados_mayores_40)
+
+print("Listado de los empleados con sueldo mayor a $200.000 mil. ")
+print(emplados_sueldo_mas_200)
 
 
 
-    print("""Tiene 5 opciones para elegir:  
-            1 - Añadir figura de Argentina
-            2 - Añadir figura de Mexico
-            3 - Añadir figura de Arabia Saudita
-            4 - Añadir figura de Polonia 
-            5 - Consultar el porcentaje del grupo completado
-            6 - Salir del programa.         
-            """)
 
-    opcion = int(input("Ingrese una opción: "))
-
-
-    if int(opcion) == 6:
-        print("Saliendo del Programa. Gracias.")
-        break
-
-    elif int(opcion) in [1, 2, 3, 4]:
-        indice = int(opcion) - 1
-        añadir_figuritas(indice)
-
-    elif int(opcion) == 5:
-        total_figuras = sum(posicion_actual_equipo)
-        total_unidades_grupoc = total_unidades * len(equipo)
-        porcentaje_grupo_completado = (total_figuras / total_unidades_grupoc) * 100
-
-        print(f"Lleva completado un {porcentaje_grupo_completado:.2f}% del grupo C.")
-
-        if porcentaje_grupo_completado == 100:
-            print("¡Felicitaciones! ¡Has completado todo el grupo C!")
-
-    else:
-        print("Opción no válida. Intente nuevamente.")
