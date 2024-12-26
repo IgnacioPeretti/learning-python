@@ -1,3 +1,5 @@
+
+
 # Creamos un archivo
 
 
@@ -22,7 +24,7 @@ except FileNotFoundError:
 
 with open("archivo_ejemplo.txt", "r") as archivo:
     for linea in archivo:
-        print(linea.strip())  # strip() elimina saltos de línea adicionales
+        print(linea.strip())  
 
 
 # Abrir un archivo en modo agregar

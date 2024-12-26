@@ -1,0 +1,3 @@
+Hola, este es mi primer archivo.
+¡Estoy aprendiendo a manejar archivos!
+Este es un nuevo texto añadido al archivo.
