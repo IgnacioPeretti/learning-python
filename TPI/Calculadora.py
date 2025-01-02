@@ -38,5 +38,5 @@ def main():
 
     print("Gracias por usar el programa!")
 
-if __name__   == '__main__':
+if __name__  == '__main__':
     main()

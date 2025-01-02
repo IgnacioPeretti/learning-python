@@ -27,7 +27,7 @@ def retiro(saldo):
         return monto
     
 
-def menu_entrada():
+def menu_principal():
 
     saldo = 0
     en_ejecucion = True
@@ -56,7 +56,7 @@ def menu_entrada():
             print("Elección no válida.")
 
 if __name__ == '__main__':
-    menu_entrada()
+    menu_principal()
 
 
 
