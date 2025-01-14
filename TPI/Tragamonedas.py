@@ -29,7 +29,3 @@ while True:
         salir == int(0)
         print("Saliendo del programa.")
         break 
-
-   
-
-
