@@ -2,7 +2,7 @@ class Celular:                # Clase
     def __init__(self, marca, modelo, camara):           # Metodo constructor
 
         self.marca = marca
-        self.modelo = modelo
+        self.modelo = modelo               # Atributos
         self.camara = camara
 
 

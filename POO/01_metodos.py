@@ -7,10 +7,10 @@ class Celular:                # Clase
         self.modelo = modelo               # Atributos
         self.camara = camara
 
-    def llamar(self):
+    def llamar(self):                                                      # Metodos
         print(f"Estas haciendo un llamado desde un: {self.modelo}")
 
-    def cortar(self):
+    def cortar(self): 
         print(f"Cortaste la llamada desde tu: {self.modelo}")
     
     def atender(self):
