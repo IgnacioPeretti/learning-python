@@ -11,7 +11,7 @@ Control del acceso, Encapsulamiento, Mantenimiento, Legibilidad y seguridad.
 """""
 class Persona:
     def __init__(self, nombre, edad):
-        self.__nombre = nombre
+        self.__nombre = nombre                        # atributos privados
         self.__edad = edad
 
     def get_nombre(self):

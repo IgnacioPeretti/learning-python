@@ -19,7 +19,7 @@ class Persona:
         self.edad = edad
     
     def Presentarse(self):
-        print(f"Hola, mi nombre es {self.nombre} y mi edad es {self.edad}")
+        print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
 
 
 class Estudiante(Persona):
@@ -28,13 +28,13 @@ class Estudiante(Persona):
 
         self.grado = grado
 
-    def mostrarGrado(self):
+    def mostrar_Grado(self):
         print(f"Estoy en {self.grado} grado.")
 
 
-Ignacio = Estudiante("Ignacio", "24", "3")
+ignacio = Estudiante("Ignacio", "24", "3")
 
-Ignacio.Presentarse()
+ignacio.Presentarse()
 
-Ignacio.mostrarGrado()
+ignacio.mostrarGrado()
     
