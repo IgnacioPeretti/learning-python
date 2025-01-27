@@ -9,6 +9,9 @@
 
 """""
 
+# En este caso, vemos como no necesitamos saber como funciona el encendido interno de un auto para poder conducirlo.
+# Sabemos que llamando al método conducir ya podremos manejar el automóvil.
+
 
 class Auto:
     def __init__(self):

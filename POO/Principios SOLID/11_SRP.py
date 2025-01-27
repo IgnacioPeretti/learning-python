@@ -3,8 +3,16 @@ SRP - Single Responsibility Principe - Principio de Responsabilidad Única
 
 Una clase debe tener una única razón para cambiar, lo que significa que debe tener una única responsabilidad.
 
-Ejemplo: Si tienes una clase Empleado que maneja tanto los detalles de un empleado como el cálculo de su salario,
-deberías dividirla en dos clases: una para manejar los detalles del empleado y otra para calcular el salario.
+Ejemplo: Imagina que tienes una clase Auto que maneja tanto las operaciones del vehículo (como arrancar el motor, conducir, etc.)
+como el manejo del tanque de combustible (llenar el tanque, controlar el nivel de combustible, etc.).
+Esto viola el principio de Responsabilidad Única.
+
+Para aplicar SRP, dividimos las responsabilidades en diferentes clases:
+
+La clase Auto manejará solo las operaciones relacionadas con el vehículo.
+Crearemos una clase separada Tanque_Combustible que se encargue del manejo del combustible.
+
+Así mantenemos cada clase enfocada en una única tarea.
 """""
 
 class Auto:
@@ -52,5 +60,5 @@ auto.mover(100)
 print(auto.obtener_posicion())
 auto.mover(10)
 print(auto.obtener_posicion())
-auto.mover(10)
+auto.mover(10)                            # Ya no podemos mover el auto, nos quedamos sin combustible.
 print(auto.obtener_posicion())
