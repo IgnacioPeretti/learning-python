@@ -23,7 +23,7 @@ print(f"Vector 1: {vector1}, Vector 2: {vector2}")
 for i in range(tamaño):
    vector3[i] = vector1[i] * vector2[i]
 
-print("El resultado final es")
+print("El resultado final es: ")
 print(f"Vector 3: {vector3}")
 
 

@@ -1,35 +1,35 @@
-import random
-import time
+n = int(input("Ingrese el tamaño de la matriz: "))
+
+matriz = []
+for i in range(n):
+    fila = []
+    for j in range(n):
+        elemento = int(input(f"Ingrese el elemento [{i}] [{j}]:"))
+        fila.append(elemento)
+    matriz.append(fila)
 
 
+print("MATRIZ INGRESADA.")
 
-def tragamonedas():
-    opciones = ["🍌","🍋","🍎","🍉"]
-    resultado = []
-
-    for x in range(3):
-        rueda = random.choice(opciones)
-        resultado.append(rueda)
-        print(f"{rueda}", end =  " ", flush = True)
-        time.sleep(1.5)
-
-    if resultado[0] == resultado[1] == resultado[2]:
-        print("\nJACKPOT!")
+for fila in matriz:
+    print(fila)
 
 
-while True:
+diagonal_principal = 0
 
-    print("\nBienvenido al tragamonedas.")
-    salir = int(input("Ingresa 0 si quieres salir del juego o 1 si quieres jugar."))
+diagonal_secundaria = 0
 
-    if salir == int(1):
-        tragamonedas()
+for i in range(n):
+    diagonal_principal += matriz[i][i]
+    diagonal_secundaria += matriz[i][n - 1 - i]
 
-    else: 
-        salir == int(0)
-        print("Saliendo del programa.")
-        break 
+if n % 2 == 1:
+    print("MATRIZ IMPAR.")
+    elemento_central = matriz[n // 2][n // 2]
+    suma_total = diagonal_principal + diagonal_secundaria - elemento_central
+else:
+    print("MATRIZ PAR.")
+    suma_total = diagonal_principal + diagonal_secundaria
 
-   
 
-
+print(f"La potencia total de las luces es: {suma_total}")
