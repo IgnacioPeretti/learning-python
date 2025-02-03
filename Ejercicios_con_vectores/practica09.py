@@ -4,7 +4,7 @@ elementos de un vector numérico, duplicar sus valores y luego
 imprimirlos en el orden ingresado
 """""
 
-numero = [0] * 30
+numero = [0] * 10
 
 print(numero)
 

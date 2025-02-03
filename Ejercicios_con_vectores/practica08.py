@@ -30,13 +30,13 @@ for i in range(num_emplados):
     nombre_apellido = input("Apellido y Nombre: ")
     edad = int(input("Ingrese su edad: "))
     sueldo = float(input("Ingrese su sueldo: "))
-    puesto = input("Ingrese su puesto (S - G - P): ")
+    puesto = input("Ingrese su puesto (S - G - P): ").lower()
 
-    if puesto == "S":
+    if puesto == "s":
       cantidad_de_supervisores += 1
-    elif puesto == "G":
+    elif puesto == "g":
        cantidad_de_gerentes += 1
-    elif puesto == "P":
+    elif puesto == "p":
        cantidad_de_planta += 1
    
 
