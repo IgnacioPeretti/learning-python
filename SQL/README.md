@@ -24,4 +24,10 @@ Se agrupan por EmployeeID y se ordenan de mayor a menor.
 Se crea un gráfico de barras para visualizar los empleados que procesaron más ventas.
 
 
-Posible mejora: Para calcular realmente la rentabilidad de los empleados, se podría modificar la consulta para que en lugar de contar órdenes (COUNT(*)), se sumen los ingresos generados por cada empleado.
+Obtener  los 10 empleados que generaron mas ingresos:
+
+Se calcula el total de ingresos generados por cada empleado sumando el producto de Price (de Products) por Quantity (de OrderDetails).
+Se unen las tablas Orders, Employees, OrderDetails y Products para obtener el precio de los productos vendidos por cada empleado.
+Se agrupan los datos por EmployeeID y se ordenan de mayor a menor según los ingresos generados.
+Se genera un gráfico de barras para visualizar los empleados con mayores ingresos.
+
