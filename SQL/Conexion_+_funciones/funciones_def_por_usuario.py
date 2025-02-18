@@ -16,5 +16,10 @@ cursor.execute(
 
 results = cursor.fetchall()
 results_df = pd.DataFrame(results)
-print(results_df)
 
+conn.commit()
+
+cursor.close()
+conn.close()
+
+print(results_df)
