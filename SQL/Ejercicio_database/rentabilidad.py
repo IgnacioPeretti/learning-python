@@ -33,7 +33,6 @@ plt.ylabel("Revenue")
 plt.xticks(rotation = 90)
 plt.show()
 
-
 # Obteniendo los 10 empleados mas rentables
 
 
@@ -53,4 +52,29 @@ plt.title("10 empleados mas rentables")
 plt.xlabel("Empleados")
 plt.ylabel("Total Vendido")
 plt.xticks(rotation = 90)
+plt.show()
+
+
+# Obteniendo los 10 empleados que generaron más ingresos
+
+query = """
+    SELECT FirstName || " " || LastName as Employee, 
+           SUM(p.Price * od.Quantity) as TotalRevenue
+    FROM Orders o
+    JOIN Employees e ON e.EmployeeID = o.EmployeeID  
+    JOIN OrderDetails od ON o.OrderID = od.OrderID
+    JOIN Products p ON od.ProductID = p.ProductID
+    GROUP BY o.EmployeeID
+    ORDER BY TotalRevenue DESC
+    LIMIT 10;
+"""
+
+top_employees_revenue = pd.read_sql_query(query, conn)  # Cambio de variable para evitar sobrescribir
+
+top_employees_revenue.plot(x="Employee", y="TotalRevenue", kind="bar", figsize=(10,5), legend=False)
+
+plt.title("10 empleados que generaron más ingresos")
+plt.xlabel("Empleados")
+plt.ylabel("Ingresos Totales")
+plt.xticks(rotation=90)
 plt.show()
